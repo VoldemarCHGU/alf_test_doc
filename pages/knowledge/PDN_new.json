@@ -1,0 +1,244 @@
+{
+  "knowledge": [
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/common",
+		"link_bz": " help/knowledge/page/76965785ebbe45e1af06560d20c35518/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Сведения об организации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1 Общие сведения"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/aims",
+		"link_bz": "help/knowledge/page/9a538fa8a2e6472d814607de270350e0/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Цели и способы обработки информации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Цели и способы обработки информации»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/softwares",
+		"link_bz": "help/knowledge/page/95f304d91bd74e188c249241f7eb0c69/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Перечень программных комплексов",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/common-infosystems",
+		"link_bz": "help/knowledge/page/f107f9c3d6a14a5cb93d2846b30456a2/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Общие сведения об ИСПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения об ИСПДн»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/structure",
+		"link_bz": "help/knowledge/page/2554d89e44c641efb71b07d33fccd988/ ",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Структура организации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/employees",
+		"link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Сотрудники организации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/company_details/#step/rooms_vaults",
+		"link_bz": "help/knowledge/page/5a669f6d41e34b138bb5cc059a1b3fe4/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / Общие сведения / Помещения и хранилища",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/personal_data/#step/softwares",
+		"link_bz": "help/knowledge/page/5849b1a887964e1686d0ea629a915618/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Характеристики ПК, входящих в состав ИСПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Характеристики ПК, входящих в состав ИСПДн»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/personal_data/#step/unautomated-processing",
+		"link_bz": "help/knowledge/page/6666029910ab44c7acfdc76dead9b7aa/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Особенности неавтоматизированной обработки ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.2 Шаг 2 «Особенности неавтоматизированной обработки ПДн»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/personal_data/#step/room-access",
+		"link_bz": "help/knowledge/page/7281335fc7064e55bccfc44de7710012/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / 6.1.2.3 Шаг 3 «Перечень помещений с обработкой ПДн»",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.3 Шаг 3 «Перечень помещений с обработкой ПДн»"
+		},
+		{
+		"link_page": "cabinet/main_wizard/personal_data/#step/person-access",
+		"link_bz": "help/knowledge/page/b9e482e9d3a046b6921013499c910a3f/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Перечень лиц, допущенных к обработке ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.4 Шаг 4 «Перечень лиц, допущенных к обработке ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/measures",
+		"link_bz": "knowledge/page/9738e060f50b41e19b441e1d781d11ca/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Обезличивание ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.5 Шаг 5 «Обезличивание ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/processing",
+		"link_bz": "knowledge/page/366bedec71b0406d807956b70af8a8f1/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Особенности обработки ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.6 Шаг 6 «Особенности обработки ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/estimation-damage",
+		"link_bz": "help/knowledge/page/3108b356b1de43ecb1790cfb3bc563d0/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Оценка вреда",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.7 Шаг 7 «Оценка вреда»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/rooms-video",
+		"link_bz": "help/knowledge/page/bf29d0af574e49238479ab191495fd81/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Перечень помещений, в которых установлены видеокамеры",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.8 Шаг 8 «Перечень помещений, в которых установлены видеокамеры»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/video-control-posts",
+		"link_bz": "help/knowledge/page/18ec55b7cda74fc29c7ede5f7bcdb464/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Перечень должностей, имеющих доступ к системе видеонаблюдения",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.9 Шаг 9 «Перечень должностей, имеющих доступ к системе видеонаблюдения»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/personal_data/#step/official-website",
+		"link_bz": "help/knowledge/page/adc94362ca484477b21f8766bf662d2a/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ПДН / Использование официального сайта",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.2.10 Шаг 10 «Использование официального сайта»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/company_management",
+		"link_bz": "help/knowledge/page/87c78927e589436896bc3166dec7d745/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Руководство организации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Руководство организации»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/pdn_processing",
+		"link_bz": "help/knowledge/page/07536ab9eaf945ba8a9ca18716cd9681/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственный за организацию обработки ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Ответственный за организацию обработки ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/resp_security_protection",
+		"link_bz": "help/knowledge/page/96cbe6a996bc4154941d4b7005aa0196/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственный за обеспечение безопасности ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Ответственный за обеспечение безопасности ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/commission_classification",
+		"link_bz": "help/knowledge/page/661c3cdb808843d9bf70344d387e58f8/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Комиссия для определения уровня защищенности ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Комиссия для определения уровня защищенности ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/commission_destruction",
+		"link_bz": "help/knowledge/page/cd5c7e1d97eb44d7bd02314900871070/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Комиссия по уничтожению (стиранию) ПДн",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.5 Шаг 5 «Комиссия по уничтожению (стиранию) ПДн»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/incidents",
+		"link_bz": "help/knowledge/page/567236aac2c14d8aab7cdb5094d4a2fc/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственные за выявление компьютерных инцидентов и реагирование на них",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.6 Шаг 6 Ответственные за выявление компьютерных инцидентов и реагирование на них"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/config_employees",
+		"link_bz": "help/knowledge/page/85f93de9a7ff4512b0a7a4d776c434e6/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.7 Шаг 7 Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/log_employees",
+		"link_bz": "help/knowledge/page/5fcbbdd6ca434656a98c82c66ea6995d/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.8 Шаг 8 Сотрудники, имеющие доступ к содержанию электронного журнала сообщений безопасности"
+		},
+       {
+		"link_page": " cabinet/main_wizard/responsibles/#step/crypto-responsible ",
+		"link_bz": "help/knowledge/page/f9800394ae9f4d6781a6263bc3999c03/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственный пользователь криптосредств",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.9 Шаг 9 «Ответственный пользователь криптосредств»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/responsibles/#step/video_control",
+		"link_bz": "help/knowledge/page/eef8f08d9e164346bdd406c28e992771/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственный за организацию и контроль за работой системы видеонаблюдения",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.3.10 Шаг 10 «Ответственный за организацию и контроль за работой системы видеонаблюдения»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/information_technologies/#step/inform-infrastructure",
+		"link_bz": "help/knowledge/page/51590df079804de59798e644b5b1545c/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Информационная инфраструктура",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/information_technologies/#step/network_communication",
+		"link_bz": "help/knowledge/page/7f70182db70f4b1e9f4823cb3ac87328/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Сетевое взаимодействие",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.4.2 Шаг 2 «Сетевое взаимодействие»"
+		},
+       {
+		"link_page": "cabinet/main_wizard/information_technologies/#step/all-protection-tools-expert",
+		"link_bz": "help/knowledge/page/964a379ecb0e4dcd8f4adec3a1c1ea91/",
+		"tariff": ["ПДН", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Реестр средств защиты информации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Реестр средств защиты информации»"
+		}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "knowledge": [
+		{
+		"link": "cabinet/main_wizard/responsibles/#step/video_control",
+		"tariff": ["ПДН"],
+		"name": "Ввод данных / ОТВЕТСТВЕННЫЕ / Ответственный за организацию и контроль за работой системы видеонаблюдения",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.5.15 Шаг 15 «Ответственный за организацию и контроль за работой системы видеонаблюдения»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/inform-infrastructure",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Информационная инфраструктура",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Информационная инфраструктура»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/network_communication",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Сетевое взаимодействие",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Сетевое взаимодействие»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/all-protection-tools-expert",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Реестр средств защиты информации",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.3 Шаг 3 «Реестр средств защиты информации»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/technologies",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Используемые технологии",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.4 Шаг 4 «Используемые технологии»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/initial-protection",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Характеристики информационной инфраструктуры",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/protection-expert",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Установка СЗИ",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.6 Шаг 6 «Установка СЗИ»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/dataflow",
+		"tariff": ["all", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Информационные потоки",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.7 Шаг 7 «Информационные потоки»"
+		},
+		{
+		"link": "cabinet/main_wizard/information_technologies/#step/security-measures",
+		"tariff": ["КИИ", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Меры по обеспечению безопасности объекта КИИ",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "Меры по обеспечению безопасности объекта КИИ"
+		},
+		{
+		"link_page": "cabinet/main_wizard/information_technologies/#step/arrangements",
+		"link_bz": "ссылка",
+		"tariff": ["КИИ", "max"],
+		"name": "Ввод данных / ИНФОРМАЦИОННЫЕ ТЕХНОЛОГИИ / Принятые меры",
+		"type_page": "step_page",
+		"zagolovok_in_knowledge": "6.1.6.9 Шаг 9 «Принятые меры»"
+		}
+	   
+  ]
+}
