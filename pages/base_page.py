@@ -33,7 +33,7 @@ class BasePage():
         loadind = True
         try:
             while loadind:
-                self.browser.find_element(By.CSS_SELECTOR, ".wizard-container.loading-spinner.loading")
+                self.browser.find_element(By.CSS_SELECTOR, ".loading")
                 time.sleep(1)
         except:
             pass
