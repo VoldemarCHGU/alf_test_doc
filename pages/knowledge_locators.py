@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+
 from .knowledge.knowledge_functions import *
 
 
@@ -13,4 +14,3 @@ class KnowledgeLocators():
     NAME_IN_STEPPAGE = (By.CSS_SELECTOR, "ul.wizard-steps li.active > a span.step-name")
     DATA_TARIFF_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     DATA_TARIFF_КИИ_СТАНДАРТ = get_data_on_tariff("КИИ.СТАНДАРТ")
-

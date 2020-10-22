@@ -1,7 +1,6 @@
 import pytest
 from selenium import webdriver
-
-
+from .pages.main_functions import f_logging
 
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default="chrome",
@@ -25,14 +24,33 @@ def choose_browser(request):
     return browser
 
 
-@pytest.fixture(scope='class', autouse=False)
-def browser(request):
+@pytest.fixture(scope='class', autouse=True)
+def browser1(request):
     print("\n___Start browser for test..___")
     browser = choose_browser(request)
     # browser.implicitly_wait(3)
     browser.maximize_window()
-
-
+    browser = f_logging(browser, "ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     yield browser
     print("\n___Quit browser..___")
-    browser.quit()
+    try:
+        browser.quit()
+    except:
+        pass
+
+@pytest.fixture(scope='class', autouse=True)
+def browser2(request):
+    print("\n___Start browser for test..___")
+    browser = choose_browser(request)
+    # browser.implicitly_wait(3)
+    browser.maximize_window()
+    browser = f_logging(browser, "КИИ.СТАНДАРТ")
+    yield browser
+    print("\n___Quit browser..___")
+    try:
+        browser.quit()
+    except:
+        pass
+
+
+# , autouse=False

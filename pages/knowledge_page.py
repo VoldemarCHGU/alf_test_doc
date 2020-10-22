@@ -1,12 +1,8 @@
-from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
+import urllib.request
 
 from .base_page import BasePage
-from .knowledge_locators import KnowledgeLocators
-import urllib.request
-import time
 from .knowledge.knowledge_functions import *
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+from .knowledge_locators import KnowledgeLocators
 
 
 class KnowledgePageBeforeMoving(BasePage):
@@ -28,21 +24,9 @@ class KnowledgePageBeforeMoving(BasePage):
         zapros = urllib.request.urlopen(help_link.get_attribute("href")).getcode()
         assert zapros == 200, f"Запрос вернул код {zapros}"
 
-    def переход_в_базу_знаний(self, data):
-        type_page = data.get("type_page")
-        zagolovok_in_knowledge_in_json = data.get("zagolovok_in_knowledge")
-
-        self.browser, current_window = переход_на_вкладку_с_БЗ(self.browser, *KnowledgeLocators.HELP_LINK)
-        zagolovok_in_knowledge = получить_заголовок_в_базе_знаний(self.browser, KnowledgeLocators)
-
-        assert zagolovok_in_knowledge == zagolovok_in_knowledge_in_json, \
-            f"в БЗ и json не совпадают: \n" \
-            f"{zagolovok_in_knowledge}\n" \
-            f"{zagolovok_in_knowledge_in_json}"
-
-        self.browser.close()
-        self.browser.switch_to.window(current_window)
-
+    def переход_в_базу_знаний(self, type_page, data):
+        self.browser, zagolovok_in_knowledge = self.проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self.browser,
+                                                                                                          data)
         if type_page == "step_page":
             need_text = получить_заголовок_до_перехода_в_базу_знаний(self.browser, KnowledgeLocators)
             self.проверить_заголовок_в_базе_знаний_с_шагом_на_странице(need_text, zagolovok_in_knowledge)
@@ -55,3 +39,15 @@ class KnowledgePageBeforeMoving(BasePage):
         assert need_text in zagolovok_in_knowledge, \
             f"Заголовок в БЗ не совпадает с полученным результатом:\n " \
             f"{need_text} \n {zagolovok_in_knowledge}"
+
+    def проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self, browser, data):
+        zagolovok_in_knowledge_in_json = data.get("zagolovok_in_knowledge")
+        browser, current_window = переход_на_вкладку_с_БЗ(browser, KnowledgeLocators.HELP_LINK)
+        zagolovok_in_knowledge = получить_заголовок_в_базе_знаний(browser, KnowledgeLocators)
+        assert zagolovok_in_knowledge == zagolovok_in_knowledge_in_json, \
+            f"в БЗ и json не совпадают: \n" \
+            f"{zagolovok_in_knowledge}\n" \
+            f"{zagolovok_in_knowledge_in_json}"
+        browser.close()
+        browser.switch_to.window(current_window)
+        return browser, zagolovok_in_knowledge

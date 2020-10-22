@@ -1,23 +1,24 @@
-from selenium.common.exceptions import NoSuchElementException
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from .main_settings import MAIN_URL
 import time
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 from .main_functions import f_logging
+from .main_settings import MAIN_URL
+
 
 class BasePage():
-    def __init__(self, browser, url, tariff):
+    def __init__(self, browser, url):
         self.browser = browser
         self.url = url.get("link_page").strip()
         # self.tariff = tariff
-        self.авторизация(tariff)
+        # self.авторизация(tariff)
 
         # self.browser.implicitly_wait(timeout)
 
-    def авторизация(self, tariff):
-        f_logging(self.browser, tariff)
+    # def авторизация(self, tariff):
+    #     f_logging(self.browser, tariff)
 
     def open_url(self):
         """
@@ -44,7 +45,3 @@ class BasePage():
                 time.sleep(1)
         except:
             pass
-
-
-
-

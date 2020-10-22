@@ -1,12 +1,20 @@
+import time
+
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 from .main_settings import Global_Profile
 from .main_settings import MAIN_URL
-import time
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 
 
 def f_logging(driver, tariff):
+
+    # try:
+    #     driver.find_element_by_link_text("Войти")
+    # except:
+    #     return driver
+
     try:
         driver.get(MAIN_URL)
         driver.find_element_by_link_text("Войти").click();
@@ -32,6 +40,6 @@ def f_logging(driver, tariff):
         time.sleep(0.5)
 
     except Exception as err:
-        print(err,"\n")
+        print(err, "\n")
     finally:
         return driver

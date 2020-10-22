@@ -1,5 +1,4 @@
 import json
-import os
 
 
 def get_data_on_tariff(tariff):
@@ -43,7 +42,8 @@ def получить_заголовок_в_базе_знаний(browser, Knowle
     # print(zagolovok_in_knowledge)
     return zagolovok_in_knowledge
 
-def переход_на_вкладку_с_БЗ(browser,locator):
+
+def переход_на_вкладку_с_БЗ(browser, locator):
     """
     Переход на вкладку с БЗ и с закрытием лишних
     """
@@ -53,8 +53,7 @@ def переход_на_вкладку_с_БЗ(browser,locator):
             browser.switch_to.window(handle)
             browser.close()
     browser.switch_to.window(current_window)
-    browser.find_element(locator).click()
+    browser.find_element(*locator).click()
     new_window = browser.window_handles[1]
     browser.switch_to.window(new_window)
     return browser, current_window
-
