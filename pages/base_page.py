@@ -5,12 +5,19 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from .main_settings import MAIN_URL
 import time
+from .main_functions import f_logging
 
 class BasePage():
-    def __init__(self, browser, url, ):
+    def __init__(self, browser, url, tariff):
         self.browser = browser
-        self.url = url
+        self.url = url.get("link_page").strip()
+        # self.tariff = tariff
+        self.авторизация(tariff)
+
         # self.browser.implicitly_wait(timeout)
+
+    def авторизация(self, tariff):
+        f_logging(self.browser, tariff)
 
     def open_url(self):
         """

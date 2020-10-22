@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def f_logging(driver):
+def f_logging(driver, tariff):
     try:
         driver.get(MAIN_URL)
         driver.find_element_by_link_text("Войти").click();
@@ -14,8 +14,7 @@ def f_logging(driver):
         driver.find_element_by_link_text("Войти через сервис авторизации Charon").click()
         # print(step, ") Нажали на Войти через сервис авторизации");step += 1
 
-        login = Global_Profile.LOGIN
-        password = Global_Profile.PASSWORD
+        login, password = Global_Profile(tariff)
 
         WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.ID, "id_password")))

@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from .pages import main_functions
+
 
 
 def pytest_addoption(parser):
@@ -25,13 +25,13 @@ def choose_browser(request):
     return browser
 
 
-@pytest.fixture(scope="class")
+@pytest.fixture(scope='class', autouse=False)
 def browser(request):
     print("\n___Start browser for test..___")
     browser = choose_browser(request)
     # browser.implicitly_wait(3)
     browser.maximize_window()
-    browser = main_functions.f_logging(browser)
+
 
     yield browser
     print("\n___Quit browser..___")
