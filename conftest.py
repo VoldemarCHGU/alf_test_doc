@@ -24,11 +24,10 @@ def choose_browser(request):
     return browser
 
 
-@pytest.fixture(scope='class', autouse=True)
+@pytest.fixture(scope='class')
 def browser1(request):
-    print("\n___Start browser for test..___")
+    print("\n___Start браузера для ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     browser = choose_browser(request)
-    # browser.implicitly_wait(3)
     browser.maximize_window()
     browser = f_logging(browser, "ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     yield browser
@@ -38,11 +37,10 @@ def browser1(request):
     except:
         pass
 
-@pytest.fixture(scope='class', autouse=True)
+@pytest.fixture(scope='class')
 def browser2(request):
-    print("\n___Start browser for test..___")
+    print("\n___Start браузера для КИИ.СТАНДАРТ")
     browser = choose_browser(request)
-    # browser.implicitly_wait(3)
     browser.maximize_window()
     browser = f_logging(browser, "КИИ.СТАНДАРТ")
     yield browser
@@ -52,5 +50,3 @@ def browser2(request):
     except:
         pass
 
-
-# , autouse=False

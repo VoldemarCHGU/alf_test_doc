@@ -10,8 +10,8 @@
         "ПДН.БЮДЖЕТ.ЭКСПЕРТ"
       ],
       "КИИ.СТАНДАРТ": {
-        "link_bz": "-",
-        "zagolovok_in_knowledge": "-"
+        "link_bz": "help/knowledge/page/b17fe11ffda54dffa484698dd68b2b03/",
+        "zagolovok_in_knowledge": "6.1.1.2 Шаг 2 «Объекты критической информационной инфраструктуры»"
       },
       "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/9a538fa8a2e6472d814607de270350e0/",
@@ -27,23 +27,14 @@
         "ПДН.БЮДЖЕТ.ЭКСПЕРТ"
       ],
       "КИИ.СТАНДАРТ": {
-        "link_bz": "-",
+        "link_bz": "help/knowledge/page/6506e914d1284d0bb5f9aa5c65c69403/",
         "zagolovok_in_knowledge": "-"
       },
       "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
-        "link_bz": "help/knowledge/page/9a538fa8a2e6472d814607de270350e0/",
+        "link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
         "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
       }
     }
-
-
-
-
-
-
-
-
-
 
 
 
