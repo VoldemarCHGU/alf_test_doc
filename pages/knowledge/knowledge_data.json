@@ -1,20 +1,23 @@
 {
   "knowledge": [
-
-      {
-        "link": "cabinet/main_wizard/company_details/#step/common-infosystems",
-        "tariff": ["all"],
-		"name": "Ввод данных / Общие сведения / Общие сведения о системах",
-        "type_page": "step_page",
-        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения о системах»"
-      },
-      {
-        "link": "cabinet/use_case/index/",
-        "tariff": ["all","max"],
-		"name": "Рабочие ситуации",
-        "type_page": "simple_page",
-        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
-      }
-
+    {
+      "link": "cabinet/main_wizard/company_details/#step/common-infosystems",
+      "tariff": [
+        "all"
+      ],
+      "name": "Ввод данных / Общие сведения / Общие сведения о системах",
+      "type_page": "step_page",
+      "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения о системах»"
+    },
+    {
+      "link": "cabinet/use_case/index/",
+      "tariff": [
+        "all",
+        "max"
+      ],
+      "name": "Рабочие ситуации",
+      "type_page": "simple_page",
+      "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+    }
   ]
 }

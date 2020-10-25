@@ -1,8 +1,7 @@
-import urllib.request
-
 from .base_page import BasePage
 from .knowledge.knowledge_functions import *
 from .knowledge_locators import KnowledgeLocators
+from .main_functions import проверка_ссылки
 from .main_settings import MAIN_URL
 
 
@@ -20,20 +19,27 @@ class KnowledgePageBeforeMoving(BasePage):
         assert self.is_element_present(
             *KnowledgeLocators.HELP_LINK), "Не найдена кнопка для 'Перехода в Базу знаний'"
 
-
     def работоспособность_ссылки(self, data, тариф_для_проверки):
+        """
+        + проверка соответствия ссылки для перехода в БЗ с json
+        + проверка запроса на ссылку (ожидается 200)
+        """
         bttn_help_link = self.browser.find_element(*KnowledgeLocators.HELP_LINK)
         help_link = bttn_help_link.get_attribute("href")
         data_tariff = data.get(тариф_для_проверки)
         help_link_in_json = (MAIN_URL + data_tariff.get("link_bz")).strip()
         assert help_link == help_link_in_json, f"Cсылка в кнопке не совпадает с json (link_bz) \n " \
-                                                        f"{help_link}\n" \
-                                                        f"{help_link_in_json}\n" \
-                                                        f"{data}"
-        zapros = urllib.request.urlopen(help_link).getcode()
-        assert zapros == 200, f"Запрос вернул код {zapros} \n {data}"
+                                               f"{help_link}\n" \
+                                               f"{help_link_in_json}\n" \
+                                               f"{data}"
+        проверка_ссылки(help_link)
 
     def переход_в_базу_знаний(self, data, тариф_для_проверки):
+        """
+        + проверка заголовка в БЗ с json
+        + проверка заголовка с шагом с БЗ (если step_page)
+
+        """
         type_page = data.get("type_page")
         need_data = data.get(тариф_для_проверки)
         self.browser, zagolovok_in_knowledge = self.проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self.browser,
@@ -42,6 +48,7 @@ class KnowledgePageBeforeMoving(BasePage):
             need_text = получить_заголовок_до_перехода_в_базу_знаний(self.browser, KnowledgeLocators)
             self.проверить_заголовок_в_базе_знаний_с_шагом_на_странице(need_text, zagolovok_in_knowledge)
 
+        self.проверить_список_страниц_этого_раздела()
 
     def проверить_заголовок_в_базе_знаний_с_шагом_на_странице(self, need_text, zagolovok_in_knowledge):
         assert need_text in zagolovok_in_knowledge, \
@@ -60,3 +67,13 @@ class KnowledgePageBeforeMoving(BasePage):
         browser.close()
         browser.switch_to.window(current_window)
         return browser, zagolovok_in_knowledge
+
+    def проверить_список_страниц_этого_раздела(self):
+        try:
+            self.browser.find_element(*KnowledgeLocators.SPISOK_PAGES_THIS_RAZDEL)
+            pages = self.browser.find_elements(*KnowledgeLocators.PAGES_THIS_RAZDEL)
+            for page in pages:
+                link = page.get_attribute("href")
+                проверка_ссылки(link)
+        except:
+            pass

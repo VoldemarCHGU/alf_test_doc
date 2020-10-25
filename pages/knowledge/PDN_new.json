@@ -1,6 +1,5 @@
 {
   "knowledge": [
-
     {
       "name": "Ввод данных / Общие сведения / Цели и способы обработки информации",
       "link_page": "cabinet/main_wizard/company_details/#step/aims",
@@ -34,9 +33,18 @@
         "link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
         "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
       }
+    },
+
+    {
+      "name": "Настройка оформления",
+      "link_page": "cabinet/dockinds/",
+      "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/1ec35d4cbf4e474ab772e31eebdbe48a/",
+        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+      }
+
     }
-
-
 
   ]
 }

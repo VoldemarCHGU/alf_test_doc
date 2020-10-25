@@ -4,7 +4,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from .main_functions import f_logging
 from .main_settings import MAIN_URL
 
 
@@ -12,13 +11,7 @@ class BasePage():
     def __init__(self, browser, url):
         self.browser = browser
         self.url = url.get("link_page").strip()
-        # self.tariff = tariff
-        # self.авторизация(tariff)
-
-        # self.browser.implicitly_wait(timeout)
-
-    # def авторизация(self, tariff):
-    #     f_logging(self.browser, tariff)
+        self.open_url()
 
     def open_url(self):
         """

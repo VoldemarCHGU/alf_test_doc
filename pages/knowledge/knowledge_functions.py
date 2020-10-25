@@ -17,11 +17,8 @@ def get_data_on_tariff(tariff):
         assert "alfa-doc" not in knowledge_link.get("link_page"), \
             "В файле json встречено alfa-doc. Исправьте на универсальную ссылку"
         tariff = (tariff.strip()).upper()
-        try:
-            knowledge_link.get(tariff)
+        if tariff in knowledge_link:
             result.append(knowledge_link)
-        except:
-            pass
     return result
 
 

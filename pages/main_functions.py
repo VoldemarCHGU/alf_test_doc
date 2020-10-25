@@ -1,4 +1,5 @@
 import time
+import urllib.request
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
@@ -9,7 +10,6 @@ from .main_settings import MAIN_URL
 
 
 def f_logging(driver, tariff):
-
     # try:
     #     driver.find_element_by_link_text("Войти")
     # except:
@@ -43,3 +43,8 @@ def f_logging(driver, tariff):
         print(err, "\n")
     finally:
         return driver
+
+
+def проверка_ссылки(link):
+    zapros = urllib.request.urlopen(link).getcode()
+    assert zapros == 200, f"Запрос вернул код {zapros} \n {link}"

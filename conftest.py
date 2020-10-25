@@ -1,6 +1,8 @@
 import pytest
 from selenium import webdriver
+
 from .pages.main_functions import f_logging
+
 
 def pytest_addoption(parser):
     parser.addoption('--browser_name', action='store', default="chrome",
@@ -37,6 +39,7 @@ def browser1(request):
     except:
         pass
 
+
 @pytest.fixture(scope='class')
 def browser2(request):
     print("\n___Start браузера для КИИ.СТАНДАРТ")
@@ -49,4 +52,3 @@ def browser2(request):
         browser.quit()
     except:
         pass
-
