@@ -18,6 +18,33 @@
       }
     },
     {
+      "name": "Ввод данных / Общие сведения / Перечень программных комплексов",
+      "link_page": "cabinet/main_wizard/company_details/#step/softwares",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/0e433d06d37342c39e4ca68672a290f7/",
+        "zagolovok_in_knowledge": "6.1.1.3 Шаг 3 «Перечень программных комплексов»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Общие сведения о системах",
+      "link_page": "cabinet/main_wizard/company_details/#step/common-infosystems",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/6976dccc8a384251b8a862c2aad9784c/",
+        "zagolovok_in_knowledge": "6.1.1.4 Шаг 4 «Общие сведения о системах»"
+      }
+    },
+    {
+      "name": "Ввод данных / Общие сведения / Структура организации",
+      "link_page": "cabinet/main_wizard/company_details/#step/structure",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4fccf9045d1743f38392a67e7a561f8e/",
+        "zagolovok_in_knowledge": "6.1.1.5 Шаг 5 «Структура организации»"
+      }
+    },
+    {
       "name": "Ввод данных / Общие сведения / Сотрудники организации",
       "link_page": "cabinet/main_wizard/company_details/#step/employees",
       "type_page": "step_page",
@@ -27,24 +54,81 @@
       ],
       "КИИ.СТАНДАРТ": {
         "link_bz": "help/knowledge/page/6506e914d1284d0bb5f9aa5c65c69403/",
-        "zagolovok_in_knowledge": "-"
+        "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
       },
       "ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/a752e736904c42c6af30ea09e5ceb4df/",
         "zagolovok_in_knowledge": "6.1.1.6 Шаг 6 «Сотрудники организации»"
       }
     },
-
     {
-      "name": "Настройка оформления",
-      "link_page": "cabinet/dockinds/",
-      "type_page": "simple_page",
+      "name": "Ввод данных / Общие сведения / Помещения и хранилища",
+      "link_page": "cabinet/main_wizard/company_details/#step/rooms_vaults",
+      "type_page": "step_page",
       "КИИ.СТАНДАРТ": {
-        "link_bz": "help/knowledge/page/1ec35d4cbf4e474ab772e31eebdbe48a/",
-        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+        "link_bz": "help/knowledge/page/40bdea8577494d37b5fa66042cd9a595/",
+        "zagolovok_in_knowledge": "6.1.1.7 Шаг 7 «Помещения и хранилища»"
       }
+    },
+    {
+      "name": "Ввод данных / КИИ / Параметры объектов КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/critical-props",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/59cc05030b364dae937b8905d3072902/",
+        "zagolovok_in_knowledge": "6.1.3.1 Шаг 1 «Параметры объектов КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Категорирование КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/category_new",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/f99c66c4925b43e390e4be5473a3249a/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Категорирование КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / КИИ / Параметры документов по КИИ",
+      "link_page": "cabinet/main_wizard/critical_category/#step/docs_params",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/59d9663698bc459d97a7161678812419/",
+        "zagolovok_in_knowledge": "6.1.3.3 Шаг 3 «Параметры документов по КИИ»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные / Руководство организации",
+      "link_page": "cabinet/main_wizard/responsibles/#step/company_management",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/776b21b14fde4377822a76c06ae3b8d0/",
+        "zagolovok_in_knowledge": "6.1.2.1 Шаг 1 «Руководство организации»"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности ",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_planning_control",
+      "type_page": "step_page"
 
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственный за управление (администрирование) системой защиты информации (подсистемой безопасности)",
+      "link_page": "cabinet/main_wizard/responsibles/#step/resp_administration_protection_system",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      }
+    },
+    {
+      "name": "Ввод данных / Ответственные /  Ответственные за выявление компьютерных инцидентов и реагирование на них ",
+      "link_page": "cabinet/main_wizard/responsibles/#step/incidents",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      }
     }
-
   ]
 }
