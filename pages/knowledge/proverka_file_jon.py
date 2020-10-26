@@ -9,14 +9,47 @@ def proverka_json_file():
     with open(r'PDN_new.json', encoding='utf-8') as f:
         pars = json.load(f)
         data = pars.get("knowledge")
-    print(f"► Всего ссылок: {len(data)}")
+    print(f"► Всего страниц для проверки: {len(data)}")
+
+    tarifs = ["КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ",
+              "ПДН.БЮДЖЕТ.ЭКСПЕРТ",
+              "КИИ.СТАНДАРТ",
+              "КИИ.ПДН.ЭКСПЕРТ",
+              "ГИС.ЭКСПЕРТ",
+              "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ",
+              "ПДН.НОТАРИУС",
+              "КИИ.ГИС"]
+
+    # all_link - собирает все ссылки в json
+    all_link = get_all_links(data, tarifs)
+
+    # здесь ищутся дубли в ссылках all_link
+    dubli_links = [k for k, v in Counter(all_link).items() if v > 1]
+    if len(dubli_links)!=0:
+        print(f"@@@@ Есть дубли ссылок \n{dubli_links}")
 
     # поиск ломанных ссылок
+    find_broken_link(data)
+
+
+
+
+def find_broken_link(data):
+    # поиск ломанных ссылок
+    # писал вспешку, хз что там творится
     broken_link, count_broken_link = [], 0
     count_link_page = 0
     new_links_page = []
     for knowledge_link in data:
         new_links_page.append(knowledge_link.get("link_page"))
+        silka = knowledge_link.get("link_page")
+        if len(silka)==0:
+            print("Отсутствкет ссылка")
+            print(knowledge_link.get("name"))
+            continue
+        if silka[0] == "/":
+            broken_link.append(knowledge_link.get("link_page"))
+            count_broken_link += 1
         if ("." or "alfa" or "//") in knowledge_link.get("link_page"):
             broken_link.append(knowledge_link.get("link_page"))
             count_broken_link+=1
@@ -33,5 +66,13 @@ def proverka_json_file():
         for i in broken_link:
             print(i)
 
+def get_all_links(data,tarifs):
+    all_link = []
+    for i in data:
+        all_link.append(i.get("link_page"))
+        for tarif in tarifs:
+            if tarif in i:
+                all_link.append((i.get(tarif)).get("link_bz"))
+    return all_link
 
 proverka_json_file()
