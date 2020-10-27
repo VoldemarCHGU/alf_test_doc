@@ -96,6 +96,7 @@ def count_tests_for_tarif(data, tarifs_all):
     print("► Кол-во тестов для каждого тарифа:")
     for i in tarifs_chet.items():
         print('  ', i)
+    print('  Итого: ', sum(tarifs_chet.values()))
 
 
 proverka_json_file()
