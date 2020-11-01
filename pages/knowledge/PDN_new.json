@@ -1,6 +1,19 @@
 {
   "knowledge": [
     {
+      "name": "Ввод данных / Общие сведения / Сведения об организации",
+      "link_page": "cabinet/main_wizard/company_details/#step/common",
+      "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/90dbefaed2a2469b8d0583970022d007/",
+        "zagolovok_in_knowledge": "6.1.1.1 Шаг 1 «Сведения об организации»"
+      },
+      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
+        "link_bz": "help/knowledge/page/9acb8d891b5e405d905a4ababd450416/",
+        "zagolovok_in_knowledge": "6.1.1 Общие сведения"
+      }
+    },
+    {
       "name": "Ввод данных / Общие сведения / Цели и способы обработки информации",
       "link_page": "cabinet/main_wizard/company_details/#step/aims",
       "type_page": "step_page",
@@ -150,6 +163,10 @@
       "name": "Ввод данных / Ответственные /  Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности ",
       "link_page": "cabinet/main_wizard/responsibles/#step/resp_planning_control",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/a546a69f6764405c96d3be0d9d5835cf/",
         "zagolovok_in_knowledge": "6.1.5.6 Шаг 6 «Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности»"
@@ -179,16 +196,6 @@
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/5f850be019b24f3d8333a86316903b0e/",
         "zagolovok_in_knowledge": "6.1.5.8 Шаг 8 Ответственные за выявление компьютерных инцидентов и реагирование на них"
-      }
-    },
-
-    {
-      "name": "Ввод данных / Общие сведения / Сведения об организации",
-      "link_page": "cabinet/main_wizard/company_details/#step/common",
-      "type_page": "step_page",
-      "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
-        "link_bz": "help/knowledge/page/9acb8d891b5e405d905a4ababd450416/",
-        "zagolovok_in_knowledge": "6.1.1 Общие сведения"
       }
     },
     {
@@ -348,6 +355,10 @@
       "name": "Ввод данных / Ответственные / Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем",
       "link_page": "cabinet/main_wizard/responsibles/#step/config_employees",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/b275d160508049329d8a86f6f76656f1/",
         "zagolovok_in_knowledge": "6.1.5.9 Шаг 9 Сотрудники, которым разрешены действия по внесению изменений в конфигурацию систем"
@@ -366,6 +377,10 @@
       "name": "Ввод данных / Ответственные / Комиссия по категорированию объектов КИИ",
       "link_page": "cabinet/main_wizard/responsibles/#step/category_commission",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/d75b450c85a246f4a7b9dbfef7a9475a/",
+        "zagolovok_in_knowledge": "6.1.3.2 Шаг 2 «Комиссия по категорированию объектов КИИ»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/32332a97c24c4fbebcfcae8fad5a183e/",
         "zagolovok_in_knowledge": "6.1.5.11 Шаг 11 «Комиссия по категорированию объектов КИИ»"
@@ -375,6 +390,10 @@
       "name": "Ввод данных / Ответственные / Лица, осуществляющие взаимодействие с ФСТЭК России",
       "link_page": "cabinet/main_wizard/responsibles/#step/resp_fstec_interaction",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "-",
+        "zagolovok_in_knowledge": "-"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/2bda26707e894d4bb35f9bf55a0ebcc6/",
         "zagolovok_in_knowledge": "6.1.5.12 Шаг 12 «Лица, осуществляющие взаимодействие с ФСТЭК России»"
@@ -382,8 +401,12 @@
     },
     {
       "name": "Ввод данных / Ответственные / Ответственные за обеспечение безопасности КИИ",
-      "link_page": "cabinet/main_wizard/responsibles/#step/category-responsible ",
+      "link_page": "cabinet/main_wizard/responsibles/#step/category-responsible",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/6d4e76e6bac148a49000341fd7fa0b74/",
+        "zagolovok_in_knowledge": "6.1.3.4 Шаг 4 «Ответственный за обеспечение безопасности значимых объектов КИИ»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/55a8c17822814cb995716e3f990f0d21/",
         "zagolovok_in_knowledge": "6.1.5.13 Шаг 13 «Ответственные за обеспечение безопасности КИИ»"
@@ -411,6 +434,10 @@
       "name": "Ввод данных / Информационные технологии / Информационная инфраструктура",
       "link_page": "cabinet/main_wizard/information_technologies/#step/inform-infrastructure",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/b2d06f98a9f7439fbcf02c85ac33ddf5/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/7f9d85f6d2c24a4c894427889e6b8de5/",
         "zagolovok_in_knowledge": "6.1.6.1 Шаг 1 «Информационная инфраструктура»"
@@ -420,6 +447,10 @@
       "name": "Ввод данных / Информационные технологии / Сетевое взаимодействие",
       "link_page": "cabinet/main_wizard/information_technologies/#step/network_communication",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/711a26b551634ed6ad6c5fd731482812/",
+        "zagolovok_in_knowledge": "6.1.4.1 Шаг 1 «Информационная инфраструктура»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/878a566a045342f99cfb33eaacd88073/",
         "zagolovok_in_knowledge": "6.1.6.2 Шаг 2 «Сетевое взаимодействие»"
@@ -429,6 +460,10 @@
       "name": "Ввод данных / Информационные технологии / Реестр средств защиты информации",
       "link_page": "cabinet/main_wizard/information_technologies/#step/all-protection-tools-expert",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/7e0d0709652249f3afbeeedb33abf822/",
+        "zagolovok_in_knowledge": "6.1.4.3 Шаг 3 «Реестр средств защиты информации»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/796fbcbf515648ac8d1fff6af0d008f0/",
         "zagolovok_in_knowledge": "6.1.6.3 Шаг 3 «Реестр средств защиты информации»"
@@ -438,6 +473,10 @@
       "name": "Ввод данных / Информационные технологии / Используемые технологии",
       "link_page": "cabinet/main_wizard/information_technologies/#step/technologies",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/707d5f0ffc4b4652b96606f86eefa038/",
+        "zagolovok_in_knowledge": "6.1.4.4 Шаг 4 «Используемые технологии»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/9445468f245f4395b7023242a23e45cb/",
         "zagolovok_in_knowledge": "6.1.6.4 Шаг 4 «Используемые технологии»"
@@ -447,6 +486,10 @@
       "name": "Ввод данных / Информационные технологии / Характеристики информационной инфраструктуры",
       "link_page": "cabinet/main_wizard/information_technologies/#step/initial-protection",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/059dfe26552d43169b2c50e6d36f1b79/",
+        "zagolovok_in_knowledge": "6.1.4.5 Шаг 5 «Характеристики информационной инфраструктуры»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/a876ae69a85b4004954f51e1fc720b7b/",
         "zagolovok_in_knowledge": "6.1.6.5 Шаг 5 «Характеристики информационной инфраструктуры»"
@@ -456,6 +499,10 @@
       "name": "Ввод данных / Информационные технологии / Установка СЗИ",
       "link_page": "cabinet/main_wizard/information_technologies/#step/protection-expert",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/ad13ed7370264f6c8d2345d90363782d/",
+        "zagolovok_in_knowledge": "6.1.4.6 Шаг 6 «Установка СЗИ»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/8b50b9b90f7843f4bfe783595caaec56/",
         "zagolovok_in_knowledge": "6.1.6.6 Шаг 6 «Установка СЗИ»"
@@ -474,6 +521,10 @@
       "name": "Ввод данных / Информационные технологии / Меры по обеспечению безопасности объекта КИИ",
       "link_page": "cabinet/main_wizard/information_technologies/#step/security-measures",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4d5378f28b0c4bbeac735eb8c4ada2ef/",
+        "zagolovok_in_knowledge": "6.1.4.7 Шаг 7 «Меры по обеспечению безопасности объекта КИИ»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/9f72ecaedb42456eaa4fb5e4c37ff4b4/",
         "zagolovok_in_knowledge": "6.1.6.8 Шаг 8 «Меры по обеспечению безопасности объекта КИИ»"
@@ -483,6 +534,10 @@
       "name": "Ввод данных / Информационные технологии / Принятые меры",
       "link_page": "cabinet/main_wizard/information_technologies/#step/arrangements",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/4c7a653896fb4edc8001bba8be8958cb/",
+        "zagolovok_in_knowledge": "6.1.4.8 Шаг 8 «Принятые меры»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/b89389d0e6304c87ab66f478087ec289/",
         "zagolovok_in_knowledge": "6.1.6.9 Шаг 9 «Принятые меры»"
@@ -528,6 +583,10 @@
       "name": "Ввод данных / Дополнительно / Оценка последствий от нарушения свойств безопасности",
       "link_page": "cabinet/main_wizard/npa_sorting/#step/characteristics",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/7b47cfad3b6347279c4a904f0ab361bc/",
+        "zagolovok_in_knowledge": "6.1.5.1 Шаг 1 «Оценка последствий от нарушений свойств безопасности»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/7daa7536de904f638e5d319ca501d39d/",
         "zagolovok_in_knowledge": "6.1.8.3 Шаг 3 «Оценка последствий от нарушения свойств безопасности»"
@@ -537,6 +596,10 @@
       "name": "Ввод данных / Дополнительно / Настройки модели угроз",
       "link_page": "cabinet/main_wizard/npa_sorting/#step/setting_measures",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/97cd7bfe9c2d4d31aa1aa18d8de51a2a/",
+        "zagolovok_in_knowledge": "6.1.5.2 Шаг 2 «Настройка модели угроз»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/97721e74558e4e8fbf525c9b3d2ce4ca/",
         "zagolovok_in_knowledge": "6.1.8.4 Шаг 4 «Настройки модели угроз»"
@@ -555,18 +618,26 @@
       "name": "Документы / Настройка оформления",
       "link_page": "cabinet/dockinds/",
       "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/1ec35d4cbf4e474ab772e31eebdbe48a/",
+        "zagolovok_in_knowledge": "6.2 «Настройка оформления»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/5cac9e069a55465da203707321740121/",
-        "zagolovok_in_knowledge": "6.2 Настройка оформления"
+        "zagolovok_in_knowledge": "6.2 «Настройка оформления»"
       }
     },
     {
       "name": "Документы / Портфель документов",
       "link_page": "cabinet/docs/briefcase/",
       "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/569314d2328a45569a1464bb2a0dc0b4/",
+        "zagolovok_in_knowledge": "6.3 Ярлык «Портфель документов»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/36bc8178fd1f46978f6544a3011f380a/",
-        "zagolovok_in_knowledge": "6.3 Портфель документов"
+        "zagolovok_in_knowledge": "6.3 «Портфель документов»"
       }
     },
     {
@@ -596,6 +667,16 @@
         "zagolovok_in_knowledge": "7.3.3 Раздел «Документы для проверки РКН»"
       }
     },
+
+
+
+
+
+
+
+
+
+
     {
       "name": "Операционная деятельность / Уведомления в Роскомнадзор",
       "link_page": "cabinet/operating_activity/inspection/inspection/list/",
@@ -655,7 +736,7 @@
       "link_page": "cabinet/operating_activity/registers/registers/registers/#step/appeals",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
-        "link_bz": " help/knowledge/page/77a6951259e6443b92a0597010207c03/",
+        "link_bz": "help/knowledge/page/77a6951259e6443b92a0597010207c03/",
         "zagolovok_in_knowledge": " 7.4.3 Журнал учета обращений субъектов персональных данных"
       }
     },
@@ -753,6 +834,10 @@
       "name": "Операционная деятельность / Проверки регуляторов",
       "link_page": "cabinet/operating_activity/external/audit/external_audits/list/",
       "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/369bf0b0943340a7851b9e4e642032aa/",
+        "zagolovok_in_knowledge": "7.1 Раздел «Проверки регуляторов»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/46db69ce8c474de597fc06baca8ee2dd/",
         "zagolovok_in_knowledge": "7.5 Ярлык «Проверки регуляторов»"
@@ -785,10 +870,22 @@
         "zagolovok_in_knowledge": "7.8 Ярлык «Сведения о системе безопасности ОКИИ»"
       }
     },
+
+
+
+
+
+
+
+
     {
       "name": "Рабочие ситуации",
       "link_page": "cabinet/use_case/index/",
       "type_page": "simple_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/42a0d336344046ba950b20b2f4f02c27/",
+        "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/072b940fb7b441f8853aa4e06af48916/",
         "zagolovok_in_knowledge": "8 РАБОЧИЕ СИТУАЦИИ"
@@ -798,6 +895,10 @@
       "name": "Рабочие ситуации / Новый сотрудник / Ввод данных",
       "link_page": "cabinet/use_case/user_creation_case/user_creation_case/#step/common",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "help/knowledge/page/3769d18c3d924a01862601af983f143a/",
+        "zagolovok_in_knowledge": "8.1 Рабочая ситуация «Принятие нового сотрудника»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/cb0c3f378f1249d3876febcaf4de95e6/",
         "zagolovok_in_knowledge": "8.1.1 Шаг 1 «Ввод данных»"
@@ -807,6 +908,10 @@
       "name": "Рабочие ситуации / Новый сотрудник / Подведение итогов",
       "link_page": "cabinet/use_case/user_creation_case/user_creation_case/#step/complete",
       "type_page": "step_page",
+      "КИИ.СТАНДАРТ": {
+        "link_bz": "Надо настроить шаг",
+        "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
+      },
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/3e5235bf275648eebb77a0b77777cf22/",
         "zagolovok_in_knowledge": "8.1.2 Шаг 2 «Подведение итогов»"
