@@ -24,6 +24,9 @@ def proverka_json_file():
     # all_link - собирает все ссылки в json
     all_link = get_all_links(data, tarifs)
     print(f"► Всего ссылок: {len(all_link)}")
+    for i in all_link:
+        if i.strip() != i:
+            print(f"________Надо убрать пробелы в ссылке_____: {i}")
 
     # кол-во тестов для каждого тарифа
     count_tests_for_tarif(data, tarifs)
