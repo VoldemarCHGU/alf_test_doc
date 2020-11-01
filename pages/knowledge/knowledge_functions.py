@@ -7,9 +7,7 @@ def get_data_on_tariff(tariff):
     :param tariff:all,...
     :return список ссылок с данным тарифом:
     """
-    # with open(r'pages\knowledge\knowledge_data.json', encoding='utf-8') as f:
     with open(r'pages\knowledge\PDN_new.json', encoding='utf-8') as f:
-        # with open(r'PDN_new.json', encoding='utf-8') as f:
         pars = json.load(f)
         data = pars.get("knowledge")
     result = []
