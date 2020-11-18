@@ -11,6 +11,7 @@ class KnowledgeLocators():
     NAME_IN_STEPPAGE = (By.CSS_SELECTOR, "ul.wizard-steps li.active > a span.step-name")
     SPISOK_PAGES_THIS_RAZDEL = (By.CSS_SELECTOR, ".summary.clearfix  > .text-uppercase")
     PAGES_THIS_RAZDEL = (By.CSS_SELECTOR, ".summary.clearfix  > ul li a")
+    BREAD_CRUMBS = (By.CSS_SELECTOR, "div.jbreadcrumbs.jbreadcrumbs-line ul li:nth-child(3) a")
     DATA_TARIFF_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     DATA_TARIFF_КИИ_СТАНДАРТ = get_data_on_tariff("КИИ.СТАНДАРТ")
     DATA_TARIFF_КИИ_ГИС_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ")
