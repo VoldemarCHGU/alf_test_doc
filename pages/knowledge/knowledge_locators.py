@@ -1,6 +1,5 @@
 from selenium.webdriver.common.by import By
-
-from .knowledge.knowledge_functions import *
+from pages.knowledge.knowledge_functions import *
 
 
 class KnowledgeLocators():
