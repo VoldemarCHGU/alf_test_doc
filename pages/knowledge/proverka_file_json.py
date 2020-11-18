@@ -7,7 +7,7 @@ def proverka_json_file():
     отдельный запуск файла, просто для информации
     """
 
-    with open(r'PDN_new.json', encoding='utf-8') as f:
+    with open(r'knowledge_data.json', encoding='utf-8') as f:
         pars = json.load(f)
         data = pars.get("knowledge")
     print(f"► Всего страниц для проверки: {len(data)}")
@@ -60,7 +60,7 @@ def find_broken_link(data):
             broken_link.append(knowledge_link.get("link_page"))
             count_broken_link += 1
         for key in knowledge_link:
-            if "link_bz" in knowledge_link.get(key):
+            if "link_bz" in list(knowledge_link.keys()):
                 link = (knowledge_link.get(key)).get("link_bz")
                 new_links_page.append(link)
                 if ('//' or "." or "alfa") in link:
