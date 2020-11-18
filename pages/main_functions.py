@@ -1,20 +1,12 @@
 import time
-import urllib.request
-
+import requests, urllib.request
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-
-from .main_settings import Global_Profile
-from .main_settings import MAIN_URL
+from .main_settings import Global_Profile, MAIN_URL
 
 
 def f_logging(driver, tariff):
-    # try:
-    #     driver.find_element_by_link_text("Войти")
-    # except:
-    #     return driver
-
     try:
         driver.get(MAIN_URL)
         driver.find_element_by_link_text("Войти").click();
@@ -43,6 +35,28 @@ def f_logging(driver, tariff):
         print(err, "\n")
     finally:
         return driver
+
+
+def get_alfadoc_rc_sessionid(USERNAME,PASSWORD):
+    LOGIN_URL = "https://login.npc-ksb.ru/account/login/"
+    ENDPOINT_URL = 'http://rc.alfa-doc.ru/accounts/charon/authenticate/'
+
+    client = requests.session()
+    client.get(LOGIN_URL)
+    csrftoken = client.cookies['alfalogin_csrftoken']
+
+    login_data = {'username': USERNAME, 'password': PASSWORD, 'csrfmiddlewaretoken': csrftoken}
+    headers = {
+        'Host': 'login.npc-ksb.ru',
+        'Origin': 'https://login.npc-ksb.ru',
+        'Referer': 'https://login.npc-ksb.ru/account/login/',
+    }
+    r1 = client.post(LOGIN_URL, data=login_data, headers=headers)
+    client.get(ENDPOINT_URL)
+    # site_update = client.get("http://rc.alfa-doc.ru/")
+    session_id =client.cookies.get('alfadoc_rc_sessionid')
+    return session_id
+
 
 
 def проверка_ссылки(link):
