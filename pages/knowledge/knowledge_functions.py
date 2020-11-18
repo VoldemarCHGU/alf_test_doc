@@ -1,5 +1,6 @@
 import json
 import pytest
+from pages.base_page import BasePage
 
 def get_data_on_tariff(tariff):
     """
@@ -31,8 +32,7 @@ def получить_заголовок_до_перехода_в_базу_зна
 
 
 def получить_заголовок_в_базе_знаний(browser, KnowledgeLocators):
-    assert browser.find_element(*KnowledgeLocators.ZAGOLOVOK_IN_KNOWLEDGE), "Нет заголовка в базе знаний"
-    zagolovok_in_knowledge = browser.find_element(*KnowledgeLocators.ZAGOLOVOK_IN_KNOWLEDGE)
+    zagolovok_in_knowledge = browser.find_element(*KnowledgeLocators)
     zagolovok_in_knowledge = zagolovok_in_knowledge.text
     # print(zagolovok_in_knowledge)
     return zagolovok_in_knowledge
@@ -54,7 +54,7 @@ def переход_на_вкладку_с_БЗ(browser, locator):
     return browser, current_window
 
 
-def проверка_на_skip_test(data,tariff):
+def проверка_на_skip_test(data, tariff):
         if data.get("skip") == True:
             pytest.skip()
         elif tariff in data:
