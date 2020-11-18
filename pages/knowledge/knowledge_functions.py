@@ -1,5 +1,5 @@
 import json
-
+import pytest
 
 def get_data_on_tariff(tariff):
     """
@@ -7,7 +7,7 @@ def get_data_on_tariff(tariff):
     :param tariff:all,...
     :return список ссылок с данным тарифом:
     """
-    with open(r'pages\knowledge\PDN_new.json', encoding='utf-8') as f:
+    with open(r'pages\\knowledge\\knowledge_data.json', encoding='utf-8') as f:
         pars = json.load(f)
         data = pars.get("knowledge")
     result = []
@@ -52,3 +52,13 @@ def переход_на_вкладку_с_БЗ(browser, locator):
     new_window = browser.window_handles[1]
     browser.switch_to.window(new_window)
     return browser, current_window
+
+
+def проверка_на_skip_test(data,tariff):
+        if data.get("skip") == True:
+            pytest.skip()
+        elif tariff in data:
+            if "skip" in data.get(tariff):
+                data_tariff = data.get(tariff)
+                if data_tariff.get("skip") == True:
+                    pytest.skip()
