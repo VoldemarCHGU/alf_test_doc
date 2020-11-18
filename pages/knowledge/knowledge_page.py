@@ -1,15 +1,15 @@
-from .base_page import BasePage
-from .knowledge.knowledge_functions import *
+from pages.base_page import BasePage
+from pages.knowledge.knowledge_functions import *
 from .knowledge_locators import KnowledgeLocators
-from .main_functions import проверка_ссылки
-from .main_settings import MAIN_URL
+from pages.main_functions import проверка_ссылки
+from pages.main_settings import MAIN_URL
 
 
 class KnowledgePageBeforeMoving(BasePage):
 
-    def есть_синяя_плашка(self):
+    def есть_синяя_плашка(self, data):
         assert self.is_element_present(
-            *KnowledgeLocators.HELP_CONTAINER), "Нет синей плашки"
+            *KnowledgeLocators.HELP_CONTAINER), f"Нет синей плашки \n {data}"
 
     def есть_текст_в_плашке(self):
         assert self.is_element_present(
