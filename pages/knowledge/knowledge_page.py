@@ -9,7 +9,10 @@ class KnowledgePageBeforeMoving(BasePage):
 
     def есть_синяя_плашка(self, data):
         assert self.is_element_present(
-            *KnowledgeLocators.HELP_CONTAINER), f"Нет синей плашки \n {data}"
+            *KnowledgeLocators.HELP_CONTAINER), f"Нет синей плашки" \
+                                                f"\n {data}" \
+                                                f"\n {data.get('name')}" \
+                                                f"\n {data.get('link_page')}"
 
     def есть_текст_в_плашке(self):
         assert self.is_element_present(
@@ -42,28 +45,47 @@ class KnowledgePageBeforeMoving(BasePage):
         """
         type_page = data.get("type_page")
         need_data = data.get(тариф_для_проверки)
+
+        # self.проверка_наличия_тарифа_в_хлебной_крошке(тариф_для_проверки)
+
         self.browser, zagolovok_in_knowledge = self.проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self.browser,
-                                                                                                          need_data)
+                                                                                                        need_data, тариф_для_проверки)
+        # если проверка заголовка сильно мешает
         if type_page == "step_page":
             need_text = получить_заголовок_до_перехода_в_базу_знаний(self.browser, KnowledgeLocators)
             self.проверить_заголовок_в_базе_знаний_с_шагом_на_странице(need_text, zagolovok_in_knowledge)
 
         self.проверить_список_страниц_этого_раздела()
 
+
+
+    def проверка_наличия_тарифа_в_хлебной_крошке(self, тариф_для_проверки):
+        BREAD_CRUMBS = self.browser.find_element(*KnowledgeLocators.BREAD_CRUMBS)
+        BREAD_CRUMBS = BREAD_CRUMBS.text.lower()
+        тариф = тариф_для_проверки.lower()
+        assert тариф in BREAD_CRUMBS, f"{тариф} не найден в {тариф_для_проверки}"
+
+
     def проверить_заголовок_в_базе_знаний_с_шагом_на_странице(self, need_text, zagolovok_in_knowledge):
         assert need_text in zagolovok_in_knowledge, \
             f"Заголовок в БЗ не совпадает с полученным результатом:\n " \
             f"{need_text} \n {zagolovok_in_knowledge}"
 
-    def проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self, browser, data):
+    def проверить_заголовок_в_базе_знаний_с_заголовком_в_json(self, browser, data, тариф_для_проверки):
         zagolovok_in_knowledge_in_json = data.get("zagolovok_in_knowledge")
         browser, current_window = переход_на_вкладку_с_БЗ(browser, KnowledgeLocators.HELP_LINK)
-        zagolovok_in_knowledge = получить_заголовок_в_базе_знаний(browser, KnowledgeLocators)
+
+        assert self.is_element_present(*KnowledgeLocators.ZAGOLOVOK_IN_KNOWLEDGE), f"Нет заголовка в базе знаний \n " \
+                                                                          f"{KnowledgeLocators}"
+        zagolovok_in_knowledge = получить_заголовок_в_базе_знаний(browser, KnowledgeLocators.ZAGOLOVOK_IN_KNOWLEDGE)
         assert zagolovok_in_knowledge == zagolovok_in_knowledge_in_json, \
             f"заголовок в БЗ и json не совпадают: \n" \
             f"{zagolovok_in_knowledge}\n" \
             f"{zagolovok_in_knowledge_in_json}" \
             f"\n{data}"
+
+        #временное решение
+        self.проверка_наличия_тарифа_в_хлебной_крошке(тариф_для_проверки)
         browser.close()
         browser.switch_to.window(current_window)
         return browser, zagolovok_in_knowledge
