@@ -160,7 +160,7 @@
       }
     },
     {
-      "name": "Ввод данных / Ответственные /  Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности ",
+      "name": "Ввод данных / Ответственные /  Ответственный за планирование и контроль мероприятий по обеспечению информационной безопасности",
       "link_page": "cabinet/main_wizard/responsibles/#step/resp_planning_control",
       "type_page": "step_page",
       "КИИ.СТАНДАРТ": {
@@ -186,7 +186,7 @@
       }
     },
     {
-      "name": "Ввод данных / Ответственные /  Ответственные за выявление компьютерных инцидентов и реагирование на них ",
+      "name": "Ввод данных / Ответственные /  Ответственные за выявление компьютерных инцидентов и реагирование на них",
       "link_page": "cabinet/main_wizard/responsibles/#step/incidents",
       "type_page": "step_page",
       "КИИ.СТАНДАРТ": {
@@ -738,7 +738,7 @@
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/77a6951259e6443b92a0597010207c03/",
-        "zagolovok_in_knowledge": " 7.4.3 Журнал учета обращений субъектов персональных данных"
+        "zagolovok_in_knowledge": "7.4.3 Журнал учета обращений субъектов персональных данных"
       }
     },
     {
@@ -747,7 +747,7 @@
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/428145f8262341128b83614c69064296/",
-        "zagolovok_in_knowledge": " 7.4.4 Лицевые счета пользователей криптосредств"
+        "zagolovok_in_knowledge": "7.4.4 Лицевые счета пользователей криптосредств"
       }
     },
     {
@@ -1027,7 +1027,7 @@
       }
     },
     {
-      "name": "Рабочие ситуации / Установка СЗИ / ",
+      "name": "Рабочие ситуации / Установка СЗИ /",
       "link_page": "cabinet/use_case/installing_protection_expert_input_case/installing_protection_expert_input_case/#step/installing_protection_expert_input_data",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
@@ -1077,7 +1077,7 @@
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
         "link_bz": "help/knowledge/page/05d58f5c6d93459e8950bdb7ad700256/",
-        "zagolovok_in_knowledge": " 12.1.3 Раздел Готовность к проверке ФСТЭК России"
+        "zagolovok_in_knowledge": "12.1.3 Раздел Готовность к проверке ФСТЭК России"
       }
     },
     {
@@ -1090,7 +1090,7 @@
       }
     },
     {
-      "name": " Аналитика / Отчёты / Эксплуатируемые системы",
+      "name": "Аналитика / Отчёты / Эксплуатируемые системы",
       "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/infosystems",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
@@ -1099,7 +1099,7 @@
       }
     },
     {
-      "name": " Аналитика / Отчёты / Используемые СЗИ",
+      "name": "Аналитика / Отчёты / Используемые СЗИ",
       "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/protections",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
@@ -1108,7 +1108,7 @@
       }
     },
     {
-      "name": " Аналитика / Отчёты / Специалисты по защите информации",
+      "name": "Аналитика / Отчёты / Специалисты по защите информации",
       "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/protection-specialists",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
@@ -1117,7 +1117,7 @@
       }
     },
     {
-      "name": " Аналитика / Отчёты / Сотрудники",
+      "name": "Аналитика / Отчёты / Сотрудники",
       "link_page": "cabinet/analytics/reports/company_reports/company_reports/#step/employees",
       "type_page": "step_page",
       "КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": {
