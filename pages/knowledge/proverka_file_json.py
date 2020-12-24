@@ -18,8 +18,8 @@ def proverka_json_file():
               "КИИ.ПДН.ЭКСПЕРТ",
               "ГИС.ЭКСПЕРТ",
               "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ",
-              "ПДН.НОТАРИУС",
-              "КИИ.ГИС"]
+              "ПДН.НОТАРИУС"
+              ]
 
     # all_link - собирает все ссылки в json
     all_link = get_all_links(data, tarifs)
@@ -90,8 +90,8 @@ def count_tests_for_tarif(data, tarifs_all):
                    "КИИ.ПДН.ЭКСПЕРТ": 0,
                    "ГИС.ЭКСПЕРТ": 0,
                    "ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ": 0,
-                   "ПДН.НОТАРИУС": 0,
-                   "КИИ.ГИС": 0}
+                   "ПДН.НОТАРИУС": 0
+                   }
     for dat in data:
         for tarif in tarifs_all:
             if tarif in dat:
