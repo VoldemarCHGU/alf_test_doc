@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+
 from pages.knowledge.knowledge_functions import *
 
 
@@ -15,4 +16,6 @@ class KnowledgeLocators():
     DATA_TARIFF_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("ПДН.БЮДЖЕТ.ЭКСПЕРТ")
     DATA_TARIFF_КИИ_СТАНДАРТ = get_data_on_tariff("КИИ.СТАНДАРТ")
     DATA_TARIFF_КИИ_ГИС_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("КИИ.ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ")
-
+    DATA_TARIFF_КИИ_ПДН_ЭКСПЕРТ = get_data_on_tariff("КИИ.ПДН.ЭКСПЕРТ")
+    DATA_TARIFF_ГИС_ЭКСПЕРТ = get_data_on_tariff("ГИС.ЭКСПЕРТ")
+    DATA_TARIFF_ГИС_ПДН_БЮДЖЕТ_ЭКСПЕРТ = get_data_on_tariff("ГИС.ПДН.БЮДЖЕТ.ЭКСПЕРТ")
