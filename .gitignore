@@ -139,5 +139,4 @@ cython_debug/
 /chromedriver.exe
 /.idea/
 /pages/main_settings.py
-/pages/main_settings.py
 /pages/knowledge/*.json
