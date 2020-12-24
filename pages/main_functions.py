@@ -77,11 +77,18 @@ def get_alfadoc_rc_sessionid(USERNAME, PASSWORD):
 
 
 def проверка_ссылки(link):
+    """
+    Проверка ссылки на код состояния (=200?)
+    """
     zapros = urllib.request.urlopen(link).getcode()
     assert zapros == 200, f"Запрос вернул код {zapros} \n {link}"
 
 
 def screen_allure(browser, step_name):
+    """
+    Добавление скриншота страницы в allure
+    1) драйвер 2) придуманное название шага для скрина
+    """
     with allure.step(step_name):
         allure.attach(browser.get_screenshot_as_png(),
                       name='screenshot',
