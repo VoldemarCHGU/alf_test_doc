@@ -57,4 +57,4 @@ def get_all_links(data):
     return all_link
 
 
-concat("knowledge_data (щк).json", "КИИ_ГИС_ПДн_Бюджет_Эксперт.json")
+concat("knowledge_data.json", "КИИ_ГИС_ПДн_Бюджет_Эксперт.json")
